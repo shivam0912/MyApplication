@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bit"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="0dp"
+        android:layout_height="267dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_coi" />
+
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="334dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:hint="3209.01"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#DBC504"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="392dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/base_currency"
+            android:layout_width="206dp"
+            android:layout_height="104dp"
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="20dp"
+            android:text="@string/base_currency"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#E2000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:fontFamily="cursive"
+            tools:ignore="RtlSymmetry" />
+
+        <Spinner
+            android:id="@+id/currencySpinner"
+            android:layout_width="174dp"
+            android:layout_height="104dp"
+            android:layout_weight="100"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+            android:clickable="true"
+            android:dropDownWidth="wrap_content"
+            android:entries="@array/currency_array"
+            android:focusable="true"
+            android:gravity="center"
+            android:minWidth="20dp"
+            android:popupBackground="@android:drawable/screen_background_light_transparent"
+            android:spinnerMode="dropdown"
+            android:textColor="#E2000000"
+            android:visibility="visible"
+            app:fontFamily="cursive"
+            tools:ignore="InefficientWeight" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

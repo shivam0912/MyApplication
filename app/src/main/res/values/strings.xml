@@ -1,0 +1,15 @@
+<resources >
+    <string name="app_name" >BitCoin Tracker</string>
+    <string name="base_currency">Base Currency</string>
+    <string name="todo">TODO</string>
+    <string name="error">Error</string>
+    <string name="label_error">Label Error</string>
+
+    <string-array name="currency_array">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>RUB</item>
+        <item>GBP</item>
+    </string-array>
+
+</resources>
