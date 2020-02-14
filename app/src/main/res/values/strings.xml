@@ -4,6 +4,7 @@
     <string name="todo">TODO</string>
     <string name="error">Error</string>
     <string name="label_error">Label Error</string>
+    <string name="_3209_01">3209.01</string>
 
     <string-array name="currency_array">
         <item>USD</item>

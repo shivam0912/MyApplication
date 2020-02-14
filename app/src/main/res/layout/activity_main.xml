@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/ic_background"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_bit"
+
     tools:context=".MainActivity">
 
     <ImageView
@@ -17,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_coi" />
+        app:srcCompat="@drawable/bit_coin" />
 
     <TextView
         android:id="@+id/priceLabel"
@@ -28,13 +29,13 @@
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
         android:gravity="center"
-        android:hint="3209.01"
+        android:hint="@string/_3209_01"
         android:textColor="#FFEB3B"
         android:textColorHint="#DBC504"
         android:textSize="30sp"
         android:textStyle="bold"
         android:visibility="visible"
-        app:fontFamily="cursive"
+        app:fontFamily="@font/trade_winds"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.358"
         app:layout_constraintStart_toStartOf="parent"
